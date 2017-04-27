@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HTML Text Formatting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<style type="text/css">
+			textarea, iframe{
+				border: 2px solid #ddd;
+				height: 500px;
+				width: 100%;
+                color: white;
+			}
+
+            #runcode {
+                margin-left: 27em;
+            }
+		</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Programming</strong> <span>For Beginners</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="tutorials.html">Tutorials</a></li>
+						<li><a href="articles.html">Articles</a></li>
+					</ul>
+					<ul class="actions vertical">
+						<li><a href="disclaimer.html" class="button special fit">Disclaimer</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>HTML Text Formatting</h1>
+									</header>
+
+                                    <h3>HTML Bold Element</h3>
+									<p>The HTML <strong>&lt;b&gt;</strong> element defines <strong>&lt;bold&gt;</strong> text.</p>
+                                    <span class="image main"><img src="images/Capture8.PNG" alt="" /></span>
+                                    <br>
+
+                                    <h3>HTML Italic Element</h3>
+									<p>The <strong>&lt;i&gt;</strong> element defines <strong>&lt;italic&gt;</strong> text.</p>
+                                    <span class="image main"><img src="images/Capture9.PNG" alt="" /></span>
+                                    <br>
+
+                                    <h3>HTML Small Element</h3>
+									<p>The <strong>&lt;small&gt;</strong> element defines <strong>&lt;smaller&gt;</strong> text.</p>
+									<span class="image main"><img src="images/Capture10.PNG" alt="" /></span>
+									<br>
+
+									<h3>HTML Highlight Element</h3>
+									<p>The <strong>&lt;mark&gt;</strong> element defines <strong>&lt;highlighted&gt;</strong> text.</p>
+									<span class="image main"><img src="images/Capture11.PNG" alt="" /></span>
+									<br>
+
+									<h3>HTML Subscript Element</h3>
+									<p>The <strong>&lt;sub&gt;</strong> element defines <strong>&lt;subscripted&gt;</strong> text.</p>
+									<span class="image main"><img src="images/Capture12.PNG" alt="" /></span>
+
+									<h3>HTML Superscript Element</h3>
+									<p>The <strong>&lt;sup&gt;</strong> element defines <strong>&lt;superscripted&gt;</strong> text.</p>
+									<span class="image main"><img src="images/Capture13.PNG" alt="" /></span>
+
+                                    <br>
+                                    <br>
+                                    <p>Use the text area below to try out using these tags.</p>
+
+
+									<table width="100%" border="0" cellspacing="5" cellpadding="5">
+										<tr>
+											<td width="50%" scope="col">&nbsp;</td>
+											<td width="50%" align="left" scope="col">
+												<input id="runcode" onclick="runCode();" type="button" value="Run Code">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<form>
+													<strong>Code</strong>
+													<textarea name="sourceCode" id="sourceCode">
+<html>
+<body>
+<h1>Welcome to Programming For Beginners</h1>
+<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
+</body>
+</html>
+                </textarea>
+												</form>
+											</td>
+											<td><strong>Output</strong><iframe name="targetCode" id="targetCode"></iframe></td>
+										</tr>
+									</table>
+
+                                    <script type="text/javascript">
+                                        function runCode()
+                                        {
+                                            var content = document.getElementById('sourceCode').value;
+                                            var iframe = document.getElementById('targetCode');
+                                            iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+                                            iframe.document.open();
+                                            iframe.document.write(content.fontcolor("white"));
+                                            iframe.document.close();
+                                            return false;
+                                        }
+                                        runCode();
+                                    </script>
+								</div>
+							</section>
+					</div>
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://twitter.com/" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>WIT College Project - Please Click <a href="disclaimer.html">Here</a> For Disclaimer</li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
